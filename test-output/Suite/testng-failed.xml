@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="mycompany.E2EFramework.Listners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="Validate Title Test(failed)" parallel="none" preserve-order="true">
+    <classes>
+      <class name="mycompany.E2EFramework.ValidateTitleTest">
+        <methods>
+          <include name="close"/>
+          <include name="basePageNavigation"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- mycompany.E2EFramework.ValidateTitleTest -->
+      <class name="mycompany.E2EFramework.HomePageTest">
+        <methods>
+          <include name="close"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- mycompany.E2EFramework.HomePageTest -->
+    </classes>
+  </test> <!-- Validate Title Test(failed) -->
+  <test name="Validate Home page(failed)" parallel="none" preserve-order="true">
+    <classes>
+      <class name="mycompany.E2EFramework.ValidateTitleTest">
+        <methods>
+          <include name="close"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- mycompany.E2EFramework.ValidateTitleTest -->
+      <class name="mycompany.E2EFramework.HomePageTest">
+        <methods>
+          <include name="close"/>
+          <include name="basePageNavigation" invocation-numbers="1"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- mycompany.E2EFramework.HomePageTest -->
+    </classes>
+  </test> <!-- Validate Home page(failed) -->
+</suite> <!-- Failed suite [Suite] -->

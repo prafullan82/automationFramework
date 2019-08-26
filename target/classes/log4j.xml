@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="basePath">./logs</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="File" filename="${basePath}/logfile.log">
+			<PatternLayout pattern="[%d{ABSOLUTE}] [%t] [%5p] [%c{1}:%L] - %m%n" />
+			<SizeBasedTriggeringPolicy size="500" />
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%d{ABSOLUTE}] [%t] [%5p] [%c{1}:%L] - %m%n" />
+		</Console>
+
+
+	</Appenders>
+	<Loggers>
+		<Root lavel="trace">
+			<AppenderRef ref="File" />
+
+		</Root>
+	</Loggers>
+</Configuration>

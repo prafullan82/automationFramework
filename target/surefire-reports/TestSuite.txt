@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 38.012 s <<< FAILURE! - in TestSuite
+basePageNavigation(mycompany.E2EFramework.ValidateTitleTest)  Time elapsed: 7.174 s  <<< FAILURE!
+java.lang.AssertionError: expected:<FEATURED COURSES> but was:<Featured Courses>
+	at mycompany.E2EFramework.ValidateTitleTest.basePageNavigation(ValidateTitleTest.java:23)
+
+basePageNavigation(mycompany.E2EFramework.HomePageTest)  Time elapsed: 5.089 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"a[href*='sign_in']"}
+  (Session info: chrome=75.0.3770.142)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SYNPUNLT7ZCS0C2', ip: '172.20.202.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\ROHIT~1.CHA\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:63873}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3079b02f96cd302a275d46d6c6b316de
+*** Element info: {Using=css selector, value=a[href*='sign_in']}
+	at mycompany.E2EFramework.HomePageTest.basePageNavigation(HomePageTest.java:34)
+
